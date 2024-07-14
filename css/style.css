@@ -1,0 +1,65 @@
+/* Global */
+:root {
+/* App Color */
+--color-primary: var(--color-prussianblue);
+--color-primary-variant: var(--color-skyblue);
+--color-primary-dark: var(--color-dark-prussianblue);
+--color-primary-light: var(--color-blue);
+--color-accent: var(--color-cyan);
+--color-text: var(--color-light-black);
+--color-text-light: var(--color-light-white);
+
+
+/* color */
+--color-prussianblue: #091427;
+--color-skyblue: #cddefb;
+--color-dark-prussianblue: #050a13;
+--color-blue: #2250a2;
+--color-cyan: #03e8f9;
+--color-black: #000000;
+--color-light-black: #0e0e0e;
+--color-white: #ffffff;
+--color-light-white: #eeeeee;
+--color-light-gray: #dddddd;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+button:focus {
+    outline: 1px solid var(--color-accent);
+}
