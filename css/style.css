@@ -105,6 +105,30 @@ button:focus {
     border-radius: 4px;
 }
 
+/* Section Common */
+.section {
+    padding: 6.25rem;
+    text-align: center;
+    margin: auto;
+}
+
+.section__container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.section__subtitle {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
 /* Prologue */
 #prologue {
     background: center/cover no-repeat url(/images/PrologueBackground.png);
