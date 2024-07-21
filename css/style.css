@@ -225,4 +225,77 @@ button:focus {
 
 .viewpoint__bottom__body {
     text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
+
+/* About me */
+
+.identity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+}
+
+.identity__icon {
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding: 0 1.875rem;
+}
+
+.identity__jobtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about__body {
+    padding: 0 4.375rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 3.125rem;
+}
+
+.majors {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 6.25rem;
+}
+
+.major {
+    width: 20rem;
+    height: 22.5rem;
+    background-color: var(--color-primary-dark);
+    padding: 5.625rem 2rem;
+    color: var(--color-text-light);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 0 25px 50px -12px #3b82f620;
+}
+
+.major__icon {
+    font-size: 5rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
+
+.major__title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.major__description {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
+}
+
