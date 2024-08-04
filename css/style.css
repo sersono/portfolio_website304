@@ -4,8 +4,10 @@
 --color-primary: var(--color-prussianblue);
 --color-primary-variant: var(--color-skyblue);
 --color-primary-dark: var(--color-dark-prussianblue);
+--color-primary-mid: var(--color-dark-blue);
 --color-primary-light: var(--color-blue);
 --color-accent: var(--color-cyan);
+--color-accent-variant: var(--color-orange);
 --color-text: var(--color-light-black);
 --color-text-light: var(--color-light-white);
 
@@ -15,14 +17,21 @@
 --color-skyblue: #cddefb;
 --color-dark-prussianblue: #050a13;
 --color-blue: #2250a2;
+--color-dark-blue: #142b54;
 --color-cyan: #03e8f9;
+--color-orange: #d13f00;
 --color-black: #000000;
 --color-light-black: #0e0e0e;
 --color-white: #ffffff;
 --color-light-white: #eeeeee;
 --color-light-gray: #dddddd;
+}
 
-
+@font-face {
+    font-family: 'Uiyeun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -264,6 +273,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    padding: 0 4.375rem;
     margin-bottom: 6.25rem;
 }
 
@@ -299,3 +309,133 @@ button:focus {
     transform: rotate(-15deg) scale(1.2);
 }
 
+/* Skills */
+
+#skills {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text)
+}
+
+.skills__subtitle {
+    margin-top: 1.875rem;
+}
+
+.skills__body {
+    padding: 0 4.375rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.skills {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    max-width: 1140px;
+    margin-top: 1.25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.skills__title {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.skills__apps {
+    grid-row: span 2;
+    padding: 2rem 5.625rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.skills__task {
+    padding: 2rem 5.625rem;
+    background-color: var(--color-primary-mid);
+    color: var(--color-text-light);
+}
+
+.skills__etc {
+    padding: 2rem 5.625rem;
+    background-color: var(--color-primary-light);
+    color: var(--color-text-light);
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.bar__matadata {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar__bg {
+    width: 100%;
+    height: 5px;
+    border-radius: 0.125rem;
+    background-color: var(--color-primary-dark);
+}
+
+.bar__value {
+    height: 5px;
+    border-radius: 0.125rem;
+    background-color: var(--color-accent);
+}
+
+/* work */
+
+.work__subtitle {
+    margin-top: 1.875rem;
+}
+
+.categories {
+    margin: 4.375rem 0 8.75rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category {
+    position: relative;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500; 
+    width: 12.5rem;
+    height: 3.125rem;
+    border: 0.125rem solid var(--color-text);
+    margin: 0 -1.5px 0 -1.5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.category--selected {
+    background-color: var(--color-accent);
+}
+
+.category__count {
+    opacity: 0;
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 100%;
+    background-color: var(--color-accent-variant);
+    color: var(--color-text-light);
+    transition: all 250ms ease-in;
+}
+
+.category--selected .category__count,
+.category:hover .category__count {
+    opacity: 1;
+    top: 9px;
+}
