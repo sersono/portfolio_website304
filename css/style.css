@@ -499,3 +499,31 @@ button:focus {
     height: 2px;
     background-color: var(--color-accent);
 }
+
+/* Epilogue */
+
+#epilogue {
+    background: center/cover no-repeat url(/images/EpilogueBackground.png);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 6.25rem 1rem;
+}
+
+.epilogue__title {
+    color: var(--color-text-light);
+}
+
+.epilogue__heading {
+    margin: 14.375rem 0 5rem 0;
+    font-family: "Noto Serif KR", serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.epilogue__body {
+    padding: 0 4.375rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
