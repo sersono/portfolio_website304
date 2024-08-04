@@ -19,7 +19,7 @@
 --color-blue: #2250a2;
 --color-dark-blue: #142b54;
 --color-cyan: #03e8f9;
---color-orange: #d13f00;
+--color-orange: #ff4d00;
 --color-black: #000000;
 --color-light-black: #0e0e0e;
 --color-white: #ffffff;
@@ -523,6 +523,78 @@ button:focus {
 .epilogue__body {
     padding: 0 4.375rem;
     text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* Arrow up */
+.arrow-up {
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 4.5rem;
+    box-shadow: 5px 5px 0px 0px rgba(109,40,217);
+}
+
+.arrow-up__icon {
+    color: var(--color-text-light);
+}
+
+/* Footer */
+
+#contact {
+    background: center/cover no-repeat url(/images/ContactBackground.png);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 6.25rem 1rem;
+}
+
+.contact__title {
+    color: var(--color-text-light);
+}
+
+.contact__subtitle {
+    color: var(--color-text-light);
+    margin-top: 1.875rem;
+}
+
+.contact__address {
+    margin-top: 14.375rem;
+    font-family: "Noto Serif KR", serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.contact__links {
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+    font-size: 3rem;
+    margin: 8.125rem 0;
+}
+
+.contact__link {
+    transition: all 250ms ease-in;
+}
+
+.contact__link:hover .contact__link__icon {
+    color: var(--color-accent-variant);
+    transform: scale(1.2);
+}
+
+.contact__link__icon {
+    color: var(--color-text-light);
+}
+
+.contact__copyright {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
