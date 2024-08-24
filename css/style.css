@@ -547,6 +547,7 @@ button:focus {
     text-align: center;
     line-height: 4.5rem;
     box-shadow: 5px 5px 0px 0px rgba(109,40,217);
+    transition: opacity 300ms ease-in
 }
 
 .arrow-up__icon {
