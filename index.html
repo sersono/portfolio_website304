@@ -22,7 +22,8 @@
     <!-- CSS -->
      <link rel="stylesheet" href="css/style.css">
      <!-- JavaScript -->
-      <script src="src/main.js" defer></script>
+      <script type="module" src="src/main.js" defer></script>
+      <script type="module" src="/src/projects.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -237,28 +238,28 @@
                 <h5 class="section__subtitle work__subtitle">Portfolio</h5>
                 <ul class="categories">
                     <li>
-                        <button class="category category--selected">All
+                        <button class="category category--selected" data-category="all">All
                             <span class="category__count">8</span>
                         </button>
                     </li>
                     <li>
-                        <button class="category">Video
+                        <button class="category" data-category="video">Video
                             <span class="category__count">3</span>
                         </button>
                     </li>
                     <li>
-                        <button class="category">Motion
+                        <button class="category" data-category="motion">Motion
                             <span class="category__count">3</span>
                         </button>
                     </li>
                     <li>
-                        <button class="category">Graphic
+                        <button class="category" data-category="graphic">Graphic
                             <span class="category__count">2</span>
                         </button>
                     </li>
                 </ul>
                 <ul class="projects">
-                    <li class="project">
+                    <li class="project" data-type="motion">
                         <a href="/sub/motion_1.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailMotion01.png" alt="Project #1 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -267,7 +268,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="motion">
                         <a href="/sub/motion_2.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailMotion02.png" alt="Project #2 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -276,7 +277,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="video">
                         <a href="/sub/video_1.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailVideo01.png" alt="Project #3 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -285,7 +286,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="video">
                         <a href="/sub/video_2.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailVideo02.png" alt="Project #4 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -294,7 +295,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="video">
                         <a href="/sub/video_3.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailVideo03.png" alt="Project #5 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -303,7 +304,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="graphic">
                         <a href="/sub/graphic_1.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailGraphic01.png" alt="Project #6 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -312,7 +313,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="motion">
                         <a href="/sub/motion_3.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailMotion03.png" alt="Project #7 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
@@ -321,7 +322,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="project">
+                    <li class="project" data-type="graphic">
                         <a href="/sub/graphic_2.html" target="_blank">
                             <img src="images/projects/PortfolioThumbnailGraphic02.png" alt="Project #8 Thumbnail Image" class="project__image">
                             <div class="project__metadata">
